@@ -11,5 +11,41 @@ const cover = document.querySelector('#cover')
 
 // Song titles
 
-const songs = ['hey'. 'summer', 'ukulele']
-\\\
+const songs = ['hey', 'summer', 'ukulele']
+
+// keep track of songs
+
+let songIndex = 2
+
+
+// Initially load song info DOM
+
+loadSong(songs[songIndex])
+
+//Update song details
+function loadSong(song) {
+    title.innerText = song
+    audio.src = `music/${song}.mp3`
+    cover.src = `images/${song}.jpg`
+
+}
+
+function playSong() {
+musicContainer.classList.add('play')
+}
+
+function pauseSong() {
+
+}
+// Event Listeners
+
+playBtn.addEventListener('click', () => {
+    const isPlaying = musicContainer.classlist.contains('play')
+
+
+    if(isPlaying) {
+        pauseSong()
+    } else {
+        playSong()
+    }
+})

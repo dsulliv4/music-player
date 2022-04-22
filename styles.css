@@ -124,19 +124,18 @@ body {
 }
 
 .progress-container {
-    background: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 10px 0;
-    height: 4px;
-    width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
 }
 
-
 .progress {
-    background-color: #fe8daa;
-    border-radius: 5px;
-    height: 100%;
-    width: 50%;
-    transition: width 0.1s linear;
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
