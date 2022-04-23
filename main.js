@@ -30,13 +30,19 @@ function loadSong(song) {
 
 }
 
-function playSong() {
-musicContainer.classList.add('play')
+function playSong() {   
+    musicContainer.classList.add('play')
+    playByn.querySelector('i.fas').classList.remove('fa-play')
+    playByn.querySelector('i.fas').classList.add('fa-pause')
 }
 
 function pauseSong() {
-
+    musicContainer.classList.remove('play')
+    playByn.querySelector('i.fas').classList.add('fa-play')
+    playByn.querySelector('i.fas').classList.remove('fa-pause')
 }
+
+
 // Event Listeners
 
 playBtn.addEventListener('click', () => {
